@@ -21,6 +21,8 @@
   font-family: "Cinzel", serif;
   font-size: 3rem;
   margin: 0;
+  padding: 0 1rem;
+  text-align: center;
 }
 
 #reviews-hero h2 {
