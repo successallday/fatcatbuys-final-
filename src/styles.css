@@ -305,6 +305,12 @@ body {
   }
 }
 
+@media (max-width: 600px) {
+  .tagline {
+    display: none;
+  }
+}
+
 /* ==============================
    GLOBAL LINKS
 ============================== */
