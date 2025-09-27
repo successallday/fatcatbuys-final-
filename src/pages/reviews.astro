@@ -1,4 +1,5 @@
 ---
+import "../reviews.css";
 import "../styles.css";
 ---
 
@@ -12,7 +13,7 @@ import "../styles.css";
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Fat Cat Buys - Lifestyle</title>
+<title>Fat Cat Buys - Reviews</title>
 
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Playfair+Display+SC:wght@600&family=Lora:wght@400;600&display=swap" rel="stylesheet">
@@ -32,35 +33,35 @@ import "../styles.css";
     <h1 class="tagline"><i>Flexing is a Strategy Too</i></h1>
 
     <nav class="nav" aria-label="Primary">
-  <ul class="nav__list">
-    <li class="nav__item nav__item--dropdown">
-      <a href="#" class="nav__link nav__link--dropdown" aria-haspopup="true" aria-expanded="false">
-        Snipes ▾
-      </a>
-      <ul class="dropdown" role="menu" aria-label="Snipes">
-        <li role="none"><a role="menuitem" class="dropdown__link" href="#cluster">Cluster Buys</a></li>
-        <li role="none"><a role="menuitem" class="dropdown__link" href="#insider">Insider Buys</a></li>
-        <li role="none"><a role="menuitem" class="dropdown__link" href="#whale">Whale Buys</a></li>
-        <li role="none"><a role="menuitem" class="dropdown__link" href="#penny">Penny Stock Buys</a></li>
+      <ul class="nav__list">
+        <li class="nav__item nav__item--dropdown">
+          <a href="#" class="nav__link nav__link--dropdown" aria-haspopup="true" aria-expanded="false">
+            Snipes ▾
+          </a>
+          <ul class="dropdown" role="menu" aria-label="Snipes">
+            <li role="none"><a role="menuitem" class="dropdown__link" href="#cluster">Cluster Buys</a></li>
+            <li role="none"><a role="menuitem" class="dropdown__link" href="#insider">Insider Buys</a></li>
+            <li role="none"><a role="menuitem" class="dropdown__link" href="#whale">Whale Buys</a></li>
+            <li role="none"><a role="menuitem" class="dropdown__link" href="#penny">Penny Stock Buys</a></li>
+          </ul>
+        </li>
+        <li class="nav__item"><a class="nav__link" href="/reviews">Reviews</a></li>
       </ul>
-    </li>
-    <li class="nav__item"><a class="nav__link" href="/reviews">Reviews</a></li>
-  </ul>
-</nav>
+    </nav>
   </div>
 </header>
 
 <!-- HERO -->
-<section id="lifestyle-hero">
+<section id="reviews-hero">
   <div class="hero-content">
     <h1>Fat Cat Reviews</h1>
     <h2>Balling Outta Control</h2>
   </div>
 </section>
 
-<!-- LIFESTYLE GRID -->
-<section id="lifestyle-section">
-  <div class="lifestyle-tile" id="yachts">
+<!-- REVIEWS GRID -->
+<section id="reviews-section">
+  <div class="reviews-tile" id="yachts">
     <a href="https://example.com" target="_blank">
       <img src="https://cdn.pixabay.com/photo/2019/09/02/09/57/royal-romance-yacht-4446932_1280.jpg" alt="Luxury Yacht">
       <h2>Yachts </h2>
@@ -68,7 +69,7 @@ import "../styles.css";
     </a>
   </div>
 
-  <div class="lifestyle-tile">
+  <div class="reviews-tile">
     <a href="https://examples.com" target="_blank">
       <img src="https://cdn.pixabay.com/photo/2019/01/09/06/50/car-3922692_1280.jpg" alt="Supercar">
       <h2>Supercars </h2>
@@ -76,7 +77,7 @@ import "../styles.css";
     </a>
   </div>
 
-  <div class="lifestyle-tile" id="mansions">
+  <div class="reviews-tile" id="mansions">
     <a href="https://example.com" target="_blank">
       <img src="https://cdn.pixabay.com/photo/2022/09/12/08/17/dinning-room-7448859_1280.jpg" alt="Luxury Mansion">
       <h2>Mansions </h2>
@@ -84,7 +85,7 @@ import "../styles.css";
     </a>
   </div>
 
-  <div class="lifestyle-tile">
+  <div class="reviews-tile">
     <a href="https://example.com" target="_blank">
       <img src="https://cdn.pixabay.com/photo/2013/04/11/18/17/shore-102821_1280.jpg" alt="Private Island">
       <h2>Private Islands </h2>
@@ -92,7 +93,7 @@ import "../styles.css";
     </a>
   </div>
 
-  <div class="lifestyle-tile" id="jets">
+  <div class="reviews-tile" id="jets">
     <a href="https://example.com" target="_blank">
       <img src="https://cdn.pixabay.com/photo/2025/09/03/16/53/airplane-9813858_1280.jpg" alt="Private Jet">
       <h2>Jets </h2>
@@ -100,7 +101,7 @@ import "../styles.css";
     </a>
   </div>
 
-  <div class="lifestyle-tile">
+  <div class="reviews-tile">
     <a href="https://example.com" target="_blank">
       <img src="https://cdn.pixabay.com/photo/2017/03/24/19/19/rolex-2171960_1280.jpg" alt="Luxury Watch">
       <h2>Watches </h2>
