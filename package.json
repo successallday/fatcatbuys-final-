@@ -1,8 +1,14 @@
 {
+  "name": "strong-solstice",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "start": "servor --reload"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "dependencies": {
-    "servor": "^4.0.2"
+  "devDependencies": {
+    "astro": "^5.14.1"
   }
 }
