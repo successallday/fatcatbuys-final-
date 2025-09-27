@@ -1,0 +1,47 @@
+---
+const { title, date, author } = Astro.props;
+import "../styles.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{title} | Fat Cat Buys</title>
+    <link rel="stylesheet" href="/styles/blog.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Lora:wght@400;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="site-header__inner container">
+        <a class="brand" href="/">
+          <div class="brand__mark"><img src="/fatcatlogo.png" alt="Fat Cat Buys Logo" /></div>
+          <div class="brand__text"><span class="brand__name">Fat Cat Buys</span></div>
+        </a>
+        <h1 class="tagline"><i>Fat Cat Blog</i></h1>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="blog container">
+      <article class="blog-post">
+        <header class="blog-header">
+          <h1>{title}</h1>
+          <p class="meta">{date} {author ? `• ${author}` : ""}</p>
+        </header>
+
+        <section class="content">
+          <slot /> <!-- blog body -->
+        </section>
+      </article>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer container">
+      <p>© <span id="year"></span> Fat Cat Buys • 
+        <span class="disclaimer">Not financial advice.</span>
+        <a href="/disclaimer">Read full disclaimer</a>
+      </p>
+    </footer>
+  </body>
+</html>
