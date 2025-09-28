@@ -13,8 +13,10 @@
               url("/images/reviewsbg.jpg"); /* swap bg if you like */
   background-size: cover;
   background-position: center;
-  border-top: 3px solid #d4af37;  /* classic gold */
-  border-bottom: 3px solid #d4af37;
+  border-top: 2px solid #d4af37;  /* classic gold */
+  border-bottom: 2px solid #d4af37;
+  color: #d4af37;
+
 
 }
 
