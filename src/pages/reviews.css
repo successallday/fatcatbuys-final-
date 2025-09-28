@@ -10,7 +10,7 @@
   text-align: center;
 
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-              url("https://cdn.pixabay.com/photo/2015/05/12/09/25/helicopter-763742_1280.jpg"); /* swap bg if you like */
+              url("/workspaces/fatcatbuys-final-/public/images/reviewsbg.jpg"); /* swap bg if you like */
   background-size: cover;
   background-position: center;
 
