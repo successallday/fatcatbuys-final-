@@ -13,8 +13,9 @@
               url("/images/reviewsbg.jpg"); /* swap bg if you like */
   background-size: cover;
   background-position: center;
+  border-top: 3px solid #d4af37;  /* classic gold */
+  border-bottom: 3px solid #d4af37;
 
-  color: var(--gold-bright);
 }
 
 #reviews-hero h1 {
