@@ -13,7 +13,8 @@ body {
   justify-content: center;
   min-height: 100vh;
   padding: 2rem;
-  gap: 2rem;
+  padding-top: 3vh;
+  gap: 7rem;
 }
 
 @media (min-width: 768px) {
@@ -33,8 +34,9 @@ body {
 .fatcat-img {
   display: block;
   border-radius: 8px;
-  width: 250px;
+  width: 320px;  /* was 250px — this gives it more visual weight */
   height: auto;
+  max-width: 100%; /* keeps it from overflowing on small screens */
 }
 
 .content {
@@ -84,4 +86,44 @@ ul {
   font-size: 0.75rem;
   color: #888;
   margin-top: 1.5rem;
+}
+
+/* --- Fat Cat mobile layout --- */
+@media (max-width: 768px) {
+  .landing {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    gap: 1.5rem;
+    min-height: 100vh;
+  }
+
+  .fatcat-img {
+    width: 180px;         /* smaller, balanced size for phones */
+    height: auto;
+    max-width: 80%;
+    margin: 0 auto 1rem auto;
+    display: block;
+  }
+
+  .content {
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+    line-height: 1.3;
+  }
+
+  p, li {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .cta {
+    width: 100%;
+    padding: 0.8rem;
+  }
 }
